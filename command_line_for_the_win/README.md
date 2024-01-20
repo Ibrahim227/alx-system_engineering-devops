@@ -14,11 +14,10 @@ task 1:
 resolve the challenge to challenge No 18
 take a screenshot of the challenge
 copy to my local machine and
-use : the 'put' comd from 'sftp' to upload the screenshot file to my github repo /root/alx-system_engineering-devops/command_line_for_the_win/
-
+use : the 'put' comd from 'sftp' to upload the screenshot file to my github project directory
 
 task 2:
-resolve the challenge to challenge No 18
+resolve the challenge to challenge No 27
 take a screenshot of the challenge
 copy the screenshot to my local machine and then
-
+use : the 'put' command from 'sftp' to upload the screenshot file to my github project directory
