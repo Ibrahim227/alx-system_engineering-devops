@@ -3,8 +3,16 @@ Command line for the win:  CMD CHALLENGE is a pretty cool game challenging you o
 
 STEPS I followed:
 
+task0:
 RESOLVE the challenge to challenge 9;
 take screenshot;
 Connected to SFTP server with my local terminal;
 change the remote working diretory from / to /root/alx-system_engineering-devops/command_line_for_the_win/
+activate the network sharing within my computer
+
+task 1:
+resolve the challenge to challenge No 18
+take a screenshot of the challenge
+copy to my local machine and
+use : the 'put' comd from 'sftp' to upload the screenshot file to my github repo /root/alx-system_engineering-devops/command_line_for_the_win/
 
