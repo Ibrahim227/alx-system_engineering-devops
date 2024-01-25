@@ -2,5 +2,5 @@
 #This script is displaying "Best School" 10 times
 bst="Best School"
 for i in [bst]; do
-	echo ("$i" * 10)
+	echo ("$i") * 10
 done
