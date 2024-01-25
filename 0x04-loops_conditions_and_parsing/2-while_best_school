@@ -3,4 +3,5 @@
 bst=0
 while [ $bst -lt 10 ]; do
 	echo "Best School"
+	((bst++))
 done
