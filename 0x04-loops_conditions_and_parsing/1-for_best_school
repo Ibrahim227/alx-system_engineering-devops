@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 #This script is displaying "Best School" 10 times
 bst=10
-for i in bst; do
+for i in {1..$bst}; do
 	echo "Best School"
 done
