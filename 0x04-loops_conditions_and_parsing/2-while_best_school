@@ -3,4 +3,7 @@
 bst=9
 while [ $bst -le 9 ]; do
 	echo "Best School"
+	if [ $bst -eq 9 ]; then
+		break
+	fi
 done
