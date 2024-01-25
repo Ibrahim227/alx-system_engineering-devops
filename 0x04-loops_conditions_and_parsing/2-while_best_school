@@ -1,9 +1,6 @@
 #!/usr/bin/env bash
 # Display "Best School" 10 times
-bst=9
-while [ $bst -le 9 ]; do
+bst=0
+while [ $bst -lt 10 ]; do
 	echo "Best School"
-	if [ $bst -eq 9 ]; then
-		break
-	fi
 done
