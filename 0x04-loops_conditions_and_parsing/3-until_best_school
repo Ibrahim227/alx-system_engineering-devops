@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 # Displasys "Best School" 10 times with 'until'
 bst=10
-until [ $bst -lt 10 ]; do
+until [ $bst -le 10 ]; do
 	echo "Best School"
 	((bst--))
 done
