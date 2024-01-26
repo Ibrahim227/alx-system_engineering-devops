@@ -3,6 +3,9 @@
 hour=0
 #min=59
 while [ $hour -le 12 ]; do
+	if [ $hour = 0 ]; then
 	echo "Hour: $hour"
+	fi
+	echo $hour
 	((hour++))
 done
