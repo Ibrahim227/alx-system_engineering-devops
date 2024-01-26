@@ -5,7 +5,6 @@
 bst=0
 while [ $bst -lt 9 ]; do
 	echo "Best School"
-	((bst++))
 
 	if [ $bst = 3 ]; then
 		echo "bad luck"
@@ -13,4 +12,5 @@ while [ $bst -lt 9 ]; do
 	if [ $bst = 6 ]; then
 		echo "good luck"
 	fi
+	((bst++))
 done
