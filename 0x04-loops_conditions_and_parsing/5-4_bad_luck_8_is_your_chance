@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+# displays bad luck for the 4th loop iteration
+#+ displays good luck for the 8th loop iteration
+#+ displays Best School for the other iteration
+for ((i=0; i<=10; i++))
+do
