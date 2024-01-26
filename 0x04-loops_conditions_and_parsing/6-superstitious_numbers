@@ -5,7 +5,7 @@
 num=0
 while [ $num -le 20 ]; do
 	case $num in
-		'1')
+		'1' | '2' | '3')
 		echo $num
 		;;
 	esac
