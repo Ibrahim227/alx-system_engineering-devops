@@ -4,12 +4,12 @@
 #+ displays Best School for the other iteration
 bst=0
 while [ $bst -lt 10 ]; do
-	if [ $bst = 2 ]; then
+	if [ $bst = 3 ]; then
 		echo "bad luck"
-	fi
-	elif [ $bst = 5 ]; then
+	elif [ $bst = 7 ]; then
 		echo "good luck"
-	else;
+	else
 		echo "Best School"	
 		((bst++))
+	fi
 done
