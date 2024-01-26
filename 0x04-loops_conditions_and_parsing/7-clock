@@ -8,11 +8,11 @@ while [ $hour -le 12 ]; do
 			echo "Hour: $min"
 		fi
 		echo $min
-	((min++))
+		((min++))
 	done
 	if [ $hour = 1 ]; then
 		echo "Hour: $hour"
 	fi
 	echo $hour
-	((hour++))
+		((hour++))
 done
