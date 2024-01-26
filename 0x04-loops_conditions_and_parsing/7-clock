@@ -3,7 +3,7 @@
 hour=0
 min=0
 while [ $hour -le 12 ]; do
-	while [ $min -lt 60 ];do
+	while [ $min -le 60 ];do
 		if [ $min = 1 ]; then
 			echo "Hour: $min"
 		fi
