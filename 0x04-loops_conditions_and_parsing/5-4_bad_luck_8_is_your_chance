@@ -3,7 +3,7 @@
 #+ displays good luck for the 8th loop iteration
 #+ displays Best School for the other iteration
 bst=0
-while [ $bst -lt 9 ]; do
+while [ $bst -ge 9 ]; do
 	echo "Best School"
 
 	if [ $bst = 2 ]; then
