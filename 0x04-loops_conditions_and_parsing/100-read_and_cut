@@ -3,4 +3,5 @@
 path="/etc/passwd/"
 while [ $path ]; do
 	echo "ls $path"
+	((path++))
 done
