@@ -8,9 +8,9 @@ while [ $hour -le 12 ]; do
 	fi
 	echo $hour
 	((hour++))
-	while [ $min -lt 60 ];do
+	while [ $min -le 60 ]; do
 		if [ $min = 0 ]; then
-			echo "Hour: 0"
+			echo "Hour: $min"
 		fi
 		echo $min
 		((min++))
