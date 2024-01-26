@@ -13,6 +13,7 @@ while [ $num -le 20 ]; do
 		;;
 		'4')
 		echo -e "$num\nbad luck from china"
+		;;
 		'9')
 		echo -e "$num\nbas luck from Japan"
 		;;
