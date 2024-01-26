@@ -4,7 +4,7 @@ bst=0
 while [ $bst -lt 9 ]; do
 	echo "Best School"
 	if [ $bst = 7 ]; then
-		echo "Best School \n Hi"
+		echo "Best School '\n' Hi"
 	fi
 	((bst++))
 done
