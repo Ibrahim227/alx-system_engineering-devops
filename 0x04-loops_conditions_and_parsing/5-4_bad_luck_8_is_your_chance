@@ -10,6 +10,6 @@ while [ $bst -lt 10 ]; do
 		echo "good luck"
 	else
 		echo "Best School"	
-		((bst++))
-	fi
+	fi	
+	((bst++))
 done
