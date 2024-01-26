@@ -5,9 +5,11 @@
 num=0
 while [ $num -le 20 ]; do
 	case $num in
-		'1' | '2' | '3')
+		'1' | '2' | '3' | '5' | '6' | '7' | '8' | '9')
 		echo $num
 		;;
+		3)
+		echo "$num\nbad luck from china"
 	esac
 	((num++))
 done
