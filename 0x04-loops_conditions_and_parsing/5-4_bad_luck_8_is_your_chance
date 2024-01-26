@@ -2,5 +2,14 @@
 # displays bad luck for the 4th loop iteration
 #+ displays good luck for the 8th loop iteration
 #+ displays Best School for the other iteration
-for ((i=0; i<=10; i++))
-do
+bst=0
+while [ $bst -lt 10 ]; do
+	if [ $bst = 3 ]; then
+		echo "bad luck"
+	fi
+	if [ $bst = 7 ]; then
+		echo "good luck"
+	fi
+	else
+		echo "Best School"
+done
