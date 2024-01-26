@@ -8,4 +8,5 @@ while [ $num -lt 20 ]; do
 		'1')
 		echo $num
 		;;
-esac
+	esac
+done
