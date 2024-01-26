@@ -4,7 +4,7 @@
 # displays 17 and then bad luck from Italy for the 17th loop iteration
 num=0
 while [ $num -lt 20 ]; do
-	case $num in 1
+	case $num in
 		1)
-		echo 1
+		echo $num
 		;;
