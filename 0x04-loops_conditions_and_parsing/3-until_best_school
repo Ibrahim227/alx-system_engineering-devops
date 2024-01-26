@@ -3,5 +3,5 @@
 bst=0
 until [ $bst -ge 10 ]; do
 	echo "Best School"
-	#((bst++))
+	((bst++))
 done
