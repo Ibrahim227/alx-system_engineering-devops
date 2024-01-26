@@ -3,14 +3,13 @@
 #+ displays good luck for the 8th loop iteration
 #+ displays Best School for the other iteration
 bst=0
-while [ $bst -lt 8 ]; do
-	echo "Best School"
-
+while [ $bst -lt 10 ]; do
 	if [ $bst = 2 ]; then
 		echo "bad luck"
 	fi
-	if [ $bst = 5 ]; then
+	elif [ $bst = 5 ]; then
 		echo "good luck"
-	fi
-	((bst++))
+	else;
+		echo "Best School"	
+		((bst++))
 done
