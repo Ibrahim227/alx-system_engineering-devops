@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 # displays the content of 'etc'passwd
 path="/etc/passwd/"
-while i in [ $path ]; do
-	echo $path
+while [ $path ]; do
+	echo "ls $path"
 done
