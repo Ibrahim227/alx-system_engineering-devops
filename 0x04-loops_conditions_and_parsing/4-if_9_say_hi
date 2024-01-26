@@ -1,9 +1,9 @@
 #!/usr/bin/env bash
 # Display "Best School" 10 times
 bst=0
-while [ $bst -lt 10 ]; do
+while [ $bst -lt 9 ]; do
 	echo "Best School"
-	if [ $bst = 8 ]; then
+	if [ $bst = 7 ]; then
 		echo "Best School \n Hi"
 	fi
 	((bst++))
