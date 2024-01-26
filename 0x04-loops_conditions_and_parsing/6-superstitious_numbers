@@ -12,10 +12,10 @@ while [ $num -le 20 ]; do
 		echo $num
 		;;
 		'4')
-		echo -e "$num\nbad luck from china"
+		echo -e "$num\nbad luck from China"
 		;;
 		'9')
-		echo -e "$num\nbas luck from Japan"
+		echo -e "$num\nbad luck from Japan"
 		;;
 		'17')
 		echo -e "$num\nbad luck from Italy"
