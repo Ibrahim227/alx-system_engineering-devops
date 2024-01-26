@@ -2,5 +2,5 @@
 # displays CWD in a list format
 #where only the part of the name
 for i in [ $CWD ]; do
-	echo "$ls $cwd" | awk -F'-'
+	echo "$CWD" | awk -F'-'
 done
