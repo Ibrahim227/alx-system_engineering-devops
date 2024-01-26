@@ -9,7 +9,7 @@ while [ $bst -lt 9 ]; do
 	if [ $bst = 2 ]; then
 		echo "bad luck"
 	fi
-	if [ $bst = 6 ]; then
+	if [ $bst = 5 ]; then
 		echo "good luck"
 	fi
 	((bst++))
