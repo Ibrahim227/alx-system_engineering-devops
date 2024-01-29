@@ -2,5 +2,7 @@
 # displays CWD in a list format
 #where only the part of the name
 cwd="ls ./"
-$cwd
-#ls
+for [ -r -w $cwd ]; do
+	echo $cwd
+done
+#$cwd
