@@ -1,4 +1,5 @@
 #!/usr/bin/env bash
 # displays CWD in a list format
 #where only the part of the name
-ls
+ls -e
+
