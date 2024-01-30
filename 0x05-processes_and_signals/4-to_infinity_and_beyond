@@ -3,4 +3,6 @@
 var="To infinity and beyond"
 while [ "$var" ]; do
 	echo "$var"
+	((var++))
+	
 done
