@@ -10,7 +10,7 @@ if [ -e "$var" ]; then
 		echo "$var file is not empty"
 	fi
 
-	if [ -f $var ]; then
+	if [ -f "$var" ]; then
 		echo "$var is a regular file"
 	fi
 else
