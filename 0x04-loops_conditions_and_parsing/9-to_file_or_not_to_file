@@ -1,3 +1,7 @@
 #!/usr/bin/env bash
 # gives information about the School file
-
+var="school"
+if [ -e $var ]; then
+	echo "$var file exists"
+else
+	echo "$var file does not exist"
