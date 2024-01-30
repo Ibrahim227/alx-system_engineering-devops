@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+#displays the visitor IP along with the HTTP status code from
+#+ apache log file
+
