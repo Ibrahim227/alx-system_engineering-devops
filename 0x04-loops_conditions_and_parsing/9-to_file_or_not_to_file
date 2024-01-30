@@ -6,8 +6,9 @@ if [ -e "$var" ]; then
 	if [ -s "$var" ]; then
 		echo "$var file is empty"
 	else
-		echo "$var file not empty"
+		echo "$var file is not empty"
 	fi
+
 	if [ -f $var ]; then
 		echo "$var is a regular file"
 	fi
