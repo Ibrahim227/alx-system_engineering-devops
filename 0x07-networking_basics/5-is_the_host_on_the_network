@@ -1,4 +1,4 @@
 #!/usr/bin/env bash
 # Write a Bash script that pings an IP address passed as an argument
-ip4=read['Enter IP:']
+ip4=$(read'Enter IP:')
 echo "$ip4"
