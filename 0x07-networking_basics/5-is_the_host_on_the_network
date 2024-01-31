@@ -2,5 +2,4 @@
 # Write a Bash script that pings an IP address passed as an a
 echo "Enter IP address '8.8.8.8': "
 read ip_var
-
-echo "ping to $(ping {ip_var})"
+echo "ping to ${ip_var}"
