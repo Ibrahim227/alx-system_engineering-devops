@@ -3,4 +3,5 @@
 # localhost resolves to 127.0.0.2
 # facebook.com resolves to 8.8.8.8
 var="/etc/hosts"
+echo "127.0.0.2 	localhost" >> "$var"
 cat "$var"
