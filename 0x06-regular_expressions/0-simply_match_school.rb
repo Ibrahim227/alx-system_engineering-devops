@@ -2,5 +2,5 @@
 #simply matching School
 str = "School"
 if match = /School/.match(str)
-	puts "match"
+	puts "#{match[School]}"
 end
