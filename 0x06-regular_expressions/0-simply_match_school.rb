@@ -1,6 +1,3 @@
 #!/usr/bin/env ruby
 #simply matching School
-str = /\School\b/i
-if str.match?(str)
-	puts "str"
-end
+puts ARGV[0].scan(/School/).join
