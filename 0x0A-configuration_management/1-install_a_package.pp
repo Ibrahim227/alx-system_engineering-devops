@@ -1,8 +1,8 @@
 # Using Puppet, install flask and pip3
 
-package { 'python3-pip':
-  ensure => installed,
-}
+#package { 'python3-pip':
+ # ensure => installed,
+#}
 
 
 exec { 'install_flask':
