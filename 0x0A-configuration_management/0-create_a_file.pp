@@ -1,3 +1,5 @@
+$VERBOSE = nil
+
 file { '/tmp/school':
     ensure  => 'school',
     mode    => '0744',
