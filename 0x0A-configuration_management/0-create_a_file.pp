@@ -1,5 +1,5 @@
 file { '/tmp':
-    ensure  => 'present',
+    ensure  => 'directory',
     mode    => '0744',
     path    => '/tmp',
     owner   => 'www-data',
