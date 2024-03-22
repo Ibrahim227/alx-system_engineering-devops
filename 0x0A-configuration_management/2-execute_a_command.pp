@@ -2,5 +2,5 @@
 
 exec { 'kill_killmenow_process':
   command => 'pkill killmenow',
-  onlyif  => 'pgrep kllmenow',
+  onlyif  => '/usr/bin/pgrep kllmenow',
 }
