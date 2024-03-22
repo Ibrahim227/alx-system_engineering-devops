@@ -1,7 +1,7 @@
-file { '/tmp/0-create_a_file.pp':
+file { '/tmp':
     ensure  => 'present',
     mode    => '0744',
-    path    => '/tmp/0-create_a_file.pp',
+    path    => '/tmp',
     owner   => 'www-data',
     group   => 'www-data',
     content => 'I love Puppet'
