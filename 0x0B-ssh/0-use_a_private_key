@@ -1,2 +1,2 @@
 #!/usr/bin/env bash
-cat ../
+ssh ubuntu@18.204.9.252 
