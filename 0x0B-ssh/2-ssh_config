@@ -1,4 +1,10 @@
 #!/usr/bin/env bash
 # Client configuration file
-ssh-copy-id ubuntu@18.204.9.252
-PasswordAuthentication no
+
+Host *
+     PasswordAuthentication no
+     IdentityFile ~/.ssh/school
+     SendEnv LANG LC_*
+     HashKnownHost yes
+     GSSAPIAuthentication yes
+     GSSAPIDelegateCredentials no
