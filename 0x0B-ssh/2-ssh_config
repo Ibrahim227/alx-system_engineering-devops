@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+# Client configuration file
+ssh-copy-id ubuntu@18.204.9.252
+PasswordAuthentication no
