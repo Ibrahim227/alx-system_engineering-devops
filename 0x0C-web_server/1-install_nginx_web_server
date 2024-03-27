@@ -13,8 +13,9 @@ echo -e "\nSetting up some minor stuff.\n"
 # starting nginx service
 sudo service nginx start
 
-listen 80;
-listen [::]:80;
+# Update Nginx configuration to listen on port 80
+sudo sed -i 's/listen 80;/listen 80 default_server;/g' /etc/nginx/sites-available/default
+sudo sed -i 's/listen \[::\]:80;/listen \[::\]:80 default_server;/g' /etc/nginx/sites-available/default
 
 # allowing nginx on firewall
 sudo ufw allow 'Nginx HTTP'
