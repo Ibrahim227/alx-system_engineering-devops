@@ -14,7 +14,7 @@ echo -e "\nSetting up some minor stuff.\n"
 sudo service nginx start
 
 listen 80 default_server;
-listen [::]:80 default_server;
+
 # allowing nginx on firewall
 sudo ufw allow 'Nginx HTTP'
 
