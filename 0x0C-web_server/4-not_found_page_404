@@ -1,14 +1,15 @@
 #!/usr/bin/env bash
 # customs nginx
-#
+# First install the Nginx server
 sudo apt update
-sudo apt-get -y install nginx
-# sudo ufw allow "Nginx HTTP"
-sudo service nginx start
-echo "Hello, World!" > /var/www/html/index.html
+sudo apt-get install -y nginx 
+echo "Hello World!" > index.html
+sudo mv index.html /var/www/html
 #
-# Write into a /etc/nginx/sites-available/default file
-# The /etc/nginx/sites-available/default file in Nginx serves as the default configuration file for handling incoming requests to your server when no specific server block matches the request's domain or IP address.
+# Creates a custom 404.html file
+echo "Ceci n'est pas une page" > /var/www/html/404.html
+#
+# Configuring the server to redirect the 404.html page
 echo "server {
     listen 80 default_server;
     listen [::]:80 default_server;
@@ -18,10 +19,11 @@ echo "server {
     location /redirect_me {
         return 301 https://www.youtube.com/watch?v=QH2-TGUlwu4;
     }
-    location / {
-        try_files \$uri \$uri/ =404;
+    error_page 404 /404.html;
+    location = /404.html{
+        internal;
     }
 }" > /etc/nginx/sites-available/default
 #
-# Restart the Nginx service
+# Restarting the nginx service
 sudo service nginx restart
