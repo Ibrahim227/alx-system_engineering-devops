@@ -1,4 +1,22 @@
 #!/usr/bin/env bash
 # A script to install load balancer
 #
+sudo apt-get -y update
+sudo apt-get -y install haproxy
 
+echo "
+frontend ibrahim-frontend
+	bind *:80
+	mode http
+	default_backend ibrahim-backend
+backend ibrahim-backend
+	balance roundrobin
+	server 440141-web-01 18.204.9.252 check
+	server 440141-web-02 100.25.196.106 check
+" >> /etc/haproxy/haproxy.cfg
+
+# Enable haproxy
+echo "ENABLED=1" | sudo tee -a /etc/default/haproxy
+
+# restart haproxy
+sudo service haproxy restart
