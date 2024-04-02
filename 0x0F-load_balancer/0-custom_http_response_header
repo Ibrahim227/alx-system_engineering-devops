@@ -7,7 +7,7 @@ sudo service nginx start
 sudo echo "Hello, World!" > /var/www/html/index.html
 #
 # Write into a /etc/nginx/sites-available/default file
-# The /etc/nginx/sites-available/default file in Nginx serves as the default configuration file for handling incoming requests to your server when no specific server block matches the request's domain or IP address.
+# The /etc/nginx/sites-available/default file in Nginx serves as the default config
 sudo echo "server {
     listen 80 default_server;
     listen [::]:80 default_server;
