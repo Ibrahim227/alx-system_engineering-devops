@@ -1,0 +1,25 @@
+#!/usr/bin/env bash
+# Usage ./0-world-wide-web <domain> <subdomain>
+
+domain_information() {
+    # DNS lookup
+    line=$(dig "$2"."$1" | grep -A1 'ANSWER SECTION:' | tr '\t' '\n' | tail -2 | tr '\n' ' ')
+    # ectract
+    echo "$2 $line" | awk '{print "The subdomain " $1 " is a " $2 " record and points to " $3}'
+}
+
+#check the niumber
+if [ "$#" == 1 ]
+then
+   # only 1 arg
+   # call the information func
+   domain_information "$1" "www"
+   domain_information "$1" "lb-01"
+   domain_information "$1" "web-01"
+   domain_information "$1" "web-02"
+elif [ "$#" == 2 ]
+then
+   # if 2 args
+   # func wioth provided args
+   domain_information "$1" "$2"
+fi
