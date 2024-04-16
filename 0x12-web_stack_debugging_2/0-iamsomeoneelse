@@ -1,3 +1,4 @@
 #!/usr/bin/env bash
 # 0. Run software as another user
-
+user=$1
+echo "$user"
