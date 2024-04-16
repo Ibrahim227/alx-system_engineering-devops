@@ -1,0 +1,1 @@
+#0x14-mysql\n 0. Install MySQL \n 1. Let us in!\n 2. If only you could see what Ive seen with your eyesn 3. Quite an experience to live in fear, isnt it?\n 4. Setup a Primary-Replica infrastructure using MySQL\n 5. MySQL backup
