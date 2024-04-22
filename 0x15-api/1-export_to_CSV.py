@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 """Import required module and/or lib"""
-
+import csv
 import requests
 import sys
 
@@ -35,6 +35,9 @@ def get_employee_progress(employee_id):
     for task in todos_data:
         if task.get('completed', False):
             print("\t {}".format(task.get("title")))
+
+    data = []
+    data.append([employee_id, employee_name])
 
 
 if __name__ == "__main__":
