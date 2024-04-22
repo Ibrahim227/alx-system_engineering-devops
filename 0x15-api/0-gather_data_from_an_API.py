@@ -33,7 +33,7 @@ def gather_data_from_api(emp_id):
             print("\t {}".format(task.get("title")))
 
 
- if __name__ == "__main__":
+if __name__ == "__main__":
     if len(sys.argv) != 2:
         print("Usage: python3 0-gather_data_from_an_API.py <employee_id>")
         sys.exit(1)
