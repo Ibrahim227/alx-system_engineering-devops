@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 """Import required module and/or lib"""
-
+import json
 import requests
 import sys
 
@@ -21,20 +21,23 @@ def get_employee_progress(employee_id):
     todos_response = requests.get(todos_url)
     todos_data = todos_response.json()
 
-    # Calculate progress
-    total_tasks = len(todos_data)
-    completed_tasks = sum(task.get("completed", False) for task in todos_data)
-
-    # Display progress information
-    print("Employee {} is done with tasks({}/{}):".format(
-        employee_name, completed_tasks, total_tasks), end='\n')
-    # print("{}: {} completed tasks out of {}".format(
-    # employee_name, completed_tasks, total_tasks))
-
-    # Display titles of completed tasks
+    # Create a list of tasks with relevant information
+    tasks_list = []
     for task in todos_data:
-        if task.get('completed', False):
-            print("\t {}".format(task.get("title")))
+        dict_task = {
+            "task": task.get('title'),
+            "completed": task.get('completed'),
+            "username": username
+        }
+        tasks_list.append(dict_task)
+
+    # Create a dictionary with the employee's tasks
+    employee_tasks = {str(employee_id): tasks_list}
+
+    # Create a JSON file with the employee's tasks
+    filename = '{}.json'.format(employee_id)
+    with open(filename, mode='w') as json_file:
+        json.dump(employee_tasks, json_file)
 
 
 if __name__ == "__main__":
