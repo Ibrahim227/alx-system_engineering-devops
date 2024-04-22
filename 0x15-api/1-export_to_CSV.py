@@ -21,23 +21,23 @@ def get_employee_progress(employee_id):
     todos_response = requests.get(todos_url)
     todos_data = todos_response.json()
 
-    # Calculate progress
-    total_tasks = len(todos_data)
-    completed_tasks = sum(task.get("completed", False) for task in todos_data)
+    username = user_data.get('username')
 
-    # Display progress information
-    print("Employee {} is done with tasks({}/{}):".format(
-        employee_name, completed_tasks, total_tasks), end='\n')
-    # print("{}: {} completed tasks out of {}".format(
-    # employee_name, completed_tasks, total_tasks))
-
-    # Display titles of completed tasks
+    # Create a list of tasks with relevant information
+    tasks_list = []
     for task in todos_data:
-        if task.get('completed', False):
-            print("\t {}".format(task.get("title")))
+        tasks_list.append(
+            [employee_id, username, task.get('completed'), task.get('title')])
 
-    data = []
-    data.append([employee_id, employee_name])
+    # Create a CSV file with the employee's tasks
+    filename = '{}.csv'.format(employee_id)
+    with open(filename, mode='w') as employee_file:
+        employee_writer = csv.writer(
+            employee_file, delimiter=',', quotechar='"', quoting=csv.QUOTE_ALL)
+
+        # Write tasks data
+        for task in tasks_list:
+            employee_writer.writerow(task)
 
 
 if __name__ == "__main__":
