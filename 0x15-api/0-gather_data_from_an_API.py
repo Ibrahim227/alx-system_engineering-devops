@@ -26,7 +26,7 @@ def get_employee_progress(employee_id):
     completed_tasks = sum(task.get("completed", False) for task in todos_data)
 
     # Display progress information
-    print("Employee {} is done with tasks ({}/{}):".format(
+    print("Employee {} is done with tasks({}/{}):".format(
         employee_name, completed_tasks, total_tasks), end='\n')
     # print("{}: {} completed tasks out of {}".format(
     # employee_name, completed_tasks, total_tasks))
