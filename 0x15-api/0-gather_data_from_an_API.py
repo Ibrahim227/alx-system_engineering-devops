@@ -16,12 +16,12 @@ def gather_data_from_api(emp_id):
     emp_name = user_data.get('name')
 
     # Fetch todos list for the employee
-    todo_resp = requests.get(todos_url)
+    todo_resp = requests.get(todo_url)
     todo_data = todo_resp.json()
 
     # calculate progress
     total_tasks = len(todo_data)
-    completed_tasks = sum(task.get("completed", False) for task in todos_data)
+    completed_tasks = sum(task.get("completed", False) for task in todo_data)
 
     # Display progress
     print("Employee {} is done with tasks ({}/{}):".format(
