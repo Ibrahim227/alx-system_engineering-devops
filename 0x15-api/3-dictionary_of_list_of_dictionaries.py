@@ -8,8 +8,8 @@ def get_employee_progress():
     """ Fetches and displays TODO list progress for a given employee.
     """
     base_url = "https://jsonplaceholder.typicode.com"
-    user_url = "{}/users/{}".format(base_url, employee_id)
-    todos_url = "{}/todos?userId={}".format(base_url, employee_id)
+    user_url = "{}/users/{}".format(base_url)
+    todos_url = "{}/todos?userId={}".format(base_url
 
     # Fetch user information
     user_response = requests.get(user_url)
