@@ -7,14 +7,12 @@ import requests
 def get_employee_progress():
     """ Fetches and displays TODO list progress for a given employee.
     """
-    base_url = "https://jsonplaceholder.typicode.com"
-    user_url = "{}/users/{}".format(base_url)
-    todos_url = "{}/todos?userId={}".format(base_url
+    base_url = "https://jsonplaceholder.typicode.com/"
+    user_url = "{}users".format(base_url)
 
     # Fetch user information
     user_response = requests.get(user_url)
     user_data = user_response.json()
-    employee_name = user_data.get('name')
 
     # Dictionary to store tasks for all employees
     all_employees_tasks = {}
