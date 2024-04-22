@@ -33,12 +33,12 @@ def gather_data_from_api(emp_id):
             print("\t {}".format(task.get("title")))
 
 
-    if __name__ == "__main__":
-        if len(sys.argv) != 2:
-            print("Usage: python3 0-gather_data_from_an_API.py <employee_id>")
-            sys.exit(1)
+ if __name__ == "__main__":
+    if len(sys.argv) != 2:
+        print("Usage: python3 0-gather_data_from_an_API.py <employee_id>")
+        sys.exit(1)
 
-        # Extract employee ID from command-line arguments
-        emp_id = int(sys.argv[1])
+    # Extract employee ID from command-line arguments
+    emp_id = int(sys.argv[1])
 
-        gather_data_from_api(emp_id)
+    gather_data_from_api(emp_id)
