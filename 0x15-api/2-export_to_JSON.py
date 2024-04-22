@@ -21,6 +21,8 @@ def get_employee_progress(employee_id):
     todos_response = requests.get(todos_url)
     todos_data = todos_response.json()
 
+    username = user_data.get('username')
+
     # Create a list of tasks with relevant information
     tasks_list = []
     for task in todos_data:
