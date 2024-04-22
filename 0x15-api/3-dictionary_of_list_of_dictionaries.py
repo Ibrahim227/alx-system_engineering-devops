@@ -23,7 +23,7 @@ def get_employee_progress():
         userid = user.get('id')
 
         # Fetch tasks for the current employee
-        todos_url = '{}todos?userId={}'.format(api_url, userid)
+        todos_url = '{}todos?userId={}'.format(base_url, userid)
         todos_response = requests.get(todos_url)
         tasks_data = todos_response.json()
 
