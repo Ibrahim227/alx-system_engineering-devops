@@ -25,7 +25,7 @@ def gather_data_from_api(emp_id):
 
     # Display progress
     print("Employee {} is done with tasks ({}/{}):".format(
-        employee_name, completed_tasks, total_tasks), end='\n')
+        emp_name, completed_tasks, total_tasks), end='\n')
 
     # Display titles of completed tasks
     for task in todo_data:
