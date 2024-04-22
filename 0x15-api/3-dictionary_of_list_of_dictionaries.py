@@ -18,7 +18,7 @@ def get_employee_progress():
     all_employees_tasks = {}
 
     # Iterate through each user
-    for user in users_data:
+    for user in user_data:
         name = user.get('username')
         userid = user.get('id')
 
