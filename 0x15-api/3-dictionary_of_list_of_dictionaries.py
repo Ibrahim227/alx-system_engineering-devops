@@ -2,10 +2,9 @@
 """Import required module and/or lib"""
 import json
 import requests
-import sys
 
 
-def get_employee_progress(employee_id):
+def get_employee_progress():
     """ Fetches and displays TODO list progress for a given employee.
     """
     base_url = "https://jsonplaceholder.typicode.com"
@@ -53,4 +52,4 @@ def get_employee_progress(employee_id):
 
 if __name__ == "__main__":
     # Call the function
-    get_employee_progress(employee_id)
+    get_employee_progress()
