@@ -17,7 +17,7 @@ def get_employee_progress(employee_id):
     user_data = user_response.json()
     employee_name = user_data.get('name')
 
- # Dictionary to store tasks for all employees
+    # Dictionary to store tasks for all employees
     all_employees_tasks = {}
 
     # Iterate through each user
