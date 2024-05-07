@@ -8,4 +8,5 @@ def number_of_subscribers(subreddit):
     if not subreddit:
         return 0
     else:
-        return subreddit
+        r = requests.get('https://www.reddit.com/dev/api#GET_api_v1_me')
+        return str(r)
